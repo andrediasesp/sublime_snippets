@@ -20,6 +20,7 @@ BEGIN
 EXCEPTION
    WHEN OTHERS THEN
 
+
 END ${1};
 ]]></content>
     <tabTrigger>create_procedure</tabTrigger> 
