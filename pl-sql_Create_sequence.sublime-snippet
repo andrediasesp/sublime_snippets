@@ -15,6 +15,7 @@ CACHE ${6:CacheValue};  --Usual 20
 
 create or replace public synonym ${1} for ${1}
 /
+
 GRANT SELECT ON ${1} TO ${2:DB_USER}
 /
 
