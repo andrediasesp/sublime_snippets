@@ -1,0 +1,27 @@
+<snippet>
+    <content><![CDATA[
+CREATE OR REPLACE PROCEDURE ${1:procedure_name}(${2:Parameter1}  IN | OUT | IN OUT DATATYPE, -- Declare mode and type of the parameter
+                                                ${3:Parameter2}  IN | OUT | IN OUT DATATYPE,
+                                                -- [N_Parameter]) 
+IS
+
+---------------
+--- CURSORS ---
+---------------
+
+
+---------------
+-- VARIABLES --
+---------------
+
+BEGIN
+    -- Executable Section
+
+EXCEPTION
+   WHEN OTHERS THEN
+
+END ${1};
+]]></content>
+    <tabTrigger>create_procedure</tabTrigger> 
+    <scope>source.plsql.oracle</scope>  
+</snippet>
