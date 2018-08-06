@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+DROP SEQUENCE ${1:SeqName};
+/
+
+-- Create sequence 
+CREATE SEQUENCE ${1}
+MINVALUE ${2:MinValue} -- Usual 1
+MAXVALUE ${3:MaxValue} -- Usual 999999999999999999999999999
+START WITH ${4:StartSeqValue} --Usual 1
+INCREMENT BY ${5:IncrementValue} -- Usual 1
+CYCLE -- OPTIONAL
+CACHE ${6:CacheValue};  --Usual 20
+/
+
+create or replace public synonym ${1} for ${1}
+/
+GRANT SELECT ON ${1} TO ${2:DB_USER}
+/
+
+ 
+]]></content>
+	<tabTrigger>create_Sequence</tabTrigger> 
+	<scope>source.plsql.oracle</scope> 
+</snippet>
