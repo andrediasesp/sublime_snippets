@@ -14,7 +14,7 @@ timeSecond NUMBER;
 BEGIN
     -- Start Time
     timeStart  := SYSTIMESTAMP;
-    -- Call function 
+    -- Call function/procedure/statement 
 
     -- End Time 
     timeEnd    := SYSTIMESTAMP;
@@ -22,11 +22,10 @@ BEGIN
     dbms_output.put_line('finished: '||timeSecond||' seconds');
 
 
-
 END;
 
 ]]></content>
     <tabTrigger>debug_timer</tabTrigger> 
     <scope>source.plsql.oracle</scope> 
-    <description>Snippet to check the execution time of a certain PL/SQL function/procedure</description>
+    <description>Snippet to check the execution time of a certain PL/SQL function/procedure/statement</description>
  </snippet>
