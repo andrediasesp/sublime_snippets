@@ -4,7 +4,7 @@
 /* ******************************************************************************/
 /* PACKAGE     - ${1:PackageName}                                               */
 /* CREATE DATE - ${2:CreateDate}                                                */
-/* CREATE USER - ${2:CreateUser}                                                */
+/* CREATE USER - ${3:CreateUser}                                                */
 /* PROJECT     - ${4:ProjectCode}                                               */
 /* DESCRIPTION - ${5:Description}                                               */
 /*                                                                              */
