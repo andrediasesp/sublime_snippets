@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+/* ******************************************************************************/
+/* PACKAGE     - ${1:PackageName}                                               */
+/* CREATE DATE - ${2:CreateDate}                                                */
+/* CREATE USER - ${3:CreateUser}                                                */
+/* PROJECT     - ${4:ProjectCode}                                               */
+/* DESCRIPTION - ${5:Description}                                               */
+/*                                                                              */
+/* ******************************************************************************/      
+CREATE OR REPLACE PACKAGE ${1} IS
+----------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------
+END ${1};
+/
+]]></content>
+    <tabTrigger>create_PackageSpec</tabTrigger> 
+    <scope>source.plsql.oracle</scope> 
+    <description>Create package spec structure</description>
+</snippet>
